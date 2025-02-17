@@ -47,14 +47,15 @@ def fillCorner(myTurtle, corner):
         myTurtle.end_fill()
         
 def squaresInSquares(myTurtle, squares):
+    size = 50
     for i in range(squares):
-        size = 200
         drawSquare(myTurtle, size)
+        size += 20
         myTurtle.up()
-        #myTurtle.forward(10)
-        #myTurtle.right(90)
-        #myTurtle.forward(10)
-        #myTurtle.left(90)
+        myTurtle.backward(10)
+        myTurtle.left(90)
+        myTurtle.forward(10)
+        myTurtle.right(90)
         myTurtle.down()
 
     
